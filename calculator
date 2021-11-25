@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    int choice;
+    do
+    {
+        cout << "\n1 addition" << endl;
+        cout << "2 subtraction" << endl;
+        cout << "3 multiplicatin" << endl;
+        cout << "4 division" << endl;
+        cout << "5 exit" << endl;
+        cout << "enter your choice::" << endl;
+        cin >> choice;
+        cout << "enter the value of A and B::";
+        cin >> a >> b;
+        switch (choice)
+        {
+        case 1:
+            c = a + b;
+            cout << "addition is =" << c;
+            break;
+        case 2:
+            c = a - b;
+            cout << "subtraction is =" << c;
+            break;
+        case 3:
+            c = a * b;
+            cout << "multiplicatin is =" << c;
+            break;
+        case 4:
+            c = a / b;
+            cout << "division is =" << c;
+            break;
+        case 5:
+            cout << "exit";
+            break;
+
+        default:
+            cout << "entered wrong key";
+            break;
+        }
+        cout << "\n===================================\n";
+    } while (5 != choice);
+}
